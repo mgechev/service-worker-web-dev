@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'code-splitting-web-dev'`, () => {
+  it(`should have as title 'service-worker-web-dev'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('code-splitting-web-dev');
+    expect(app.title).toEqual('service-worker-web-dev');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to code-splitting-web-dev!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to service-worker-web-dev!');
   });
 });
